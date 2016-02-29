@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
 
   #Users routes
-  get 'users/new'
+  resources :users
   match '/signup', to: 'users#new', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
