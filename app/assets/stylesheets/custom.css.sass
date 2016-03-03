@@ -1,6 +1,10 @@
 @import "bootstrap"
 
 /* universal */
+=box_sizing
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
 
 html
   overflow-y: scroll
@@ -68,12 +72,36 @@ footer
       float: left
       margin-left: 10px
 
-//debug
-=box_sizing
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+//flash messages
+.flash
+  text-align: center
 
+/* forms */
+label
+  display: block
+  margin: 0 auto
+  width: 50%
+input, textarea, select, .uneditable-input
+  border: 1px solid #bbb
+  display: table !important
+  margin: 0 auto
+  width: 50%
+  margin-bottom: 15px
+  height: auto !important
+  +box_sizing
+#error_explanation
+  color: #f00
+  ul
+    list-style: circle
+    margin: 0 0 18px 0
+.field_with_errors
+  color: red
+  > input
+    border-color: red
+    color: red
+
+
+//debug
 .debug_dump
   clear: both
   margin-top: 45px
