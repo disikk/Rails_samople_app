@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+# http://railstutorial.ru/chapters/4_0/sign-in-sign-out#sec-remember_me
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
