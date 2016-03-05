@@ -11,8 +11,7 @@ class UsersController < ApplicationController
       flash[:success] = "Вы успешно зарегистрированы!"
       redirect_to @user
     else
-    #   creation failed
-      flash[:danger] = "Бля!"
+      flash.now[:danger] = "Бля!"
       render 'new'
     end
   end
